@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    padding: 1rem;
+    background-color: var(--PaleBlue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    max-width: 325px;
+    height: 563px;
+    border-radius: 20px;
+}
+
+.heading {
+    height: 159px;
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding: 31px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--DarkBlue);
+}
+
+p {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--DesaturatedBlue);
+    line-height: 1.5rem;
+}
+
+.deal {
+    margin-top: 26px;
+    background-color: var(--VeryPaleBlue);
+    width: 100%;
+    height: 80px;
+    padding: 0 12px 0 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#planPrice {
+    margin-left: 18px;
+  
+}
+
+h2 {
+    font-size: 0.96rem;
+    color: var(--DarkBlue);
+}
+
+h3 {
+    margin-top: 3px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--DesaturatedBlue);
+}
+
+#change {
+    margin-left: 48px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--BrightBlue);
+}
+
+#change:hover {
+    color: hsla(245, 75%, 52%, 0.7);
+    text-decoration: none;
+}
+
+#payment {
+    height: 50px;
+    width: 100%;
+    margin-top: 24px;
+    padding-top: 15px;
+    background-color: var(--BrightBlue);
+    color: var(--VeryPaleBlue);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 7px 20px 15px var(--PaleBlue);
+}
+
+#payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+#cancel {
+    margin-top: 23px;
+    color: var(--DesaturatedBlue);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#cancel:hover {
+    color: var(--DarkBlue)
+}
+
+@media screen and (min-width: 45rem){
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        max-width: 445px;
+        height: 690px;
+    }
+
+    .heading {
+        height: 219px;
+    }
+
+    .content {
+        padding: 45px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        margin-top: 19px;
+        font-size: 1.02rem;
+        line-height: 1.55rem;
+    }
+
+    .deal {
+        height: 97px;
+        margin-top: 21px;
+        padding: 0 12px 0 26px;
+    }
+
+    #planPrice {
+        margin-left: 22px;
+    }
+
+    h2 {
+        font-size: 1.05rem;
+    }
+
+    h3 {
+        margin-top: 7px;
+        font-size: 1rem;
+    }
+
+    #change {
+        font-size: 0.85rem;
+        margin-left: 85px;
+    }
+    #payment {
+        margin-top: 33px;
+    }
+    #cancel {
+        margin-top: 29px;
+    }
+}
